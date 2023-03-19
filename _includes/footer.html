@@ -1,0 +1,58 @@
+<!-- Footer -->
+<footer> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+        <p class="footer-contact">
+          {{ site.company_name }} <br>
+          Phone: <a href="tel:+{{ site.telephone_number }}">{{ site.telephone_number }}</a><br>
+          <!--Fax: {{ site.fax_number }} <br>-->
+          Email: <a href="mailto:{{ site.company_email }}">{{ site.company_email }}</a><br>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-external-link"></i> Links</h3>
+        <p><a href="/about"> About ( Who we are )</a></p>
+        <p><a href="/features"> Features ( What we provide )</a></p>
+        <p><a href="/partners"> Partners ( Meet Our Partners )</a></p> 
+        <!--<p><a href="/blog"> Blog ( Write to us )</a></p>-->
+        <p><a href="/contact"> Contact ( Feel free to contact )</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-heart"></i> Socialize</h3>
+        <div id="social-icons">
+          {% if site.googleplus_link %}
+            <a href="{{ site.googleplus_link }}" class="btn-group google-plus">
+              <i class="fa-brands fa-google-plus"></i>
+            </a>
+          {% endif %}
+
+          {% if site.linkedin_link %}
+            <a href="{{ site.linkedin_link }}" class="btn-group linkedin">
+              <i class="fa-brands fa-linkedin-square"></i>
+            </a>
+          {% endif %}
+
+          {% if site.facebook_link %}
+            <a href="{{ site.twitter_link }}" class="btn-group twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          {% endif %}
+
+          {% if site.facebook_link %}
+            <a href="{{ site.facebook_link }}" class="btn-group facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          {% endif %}
+        </div>
+      </div>    
+    </div>
+  </div>
+
+  <div class="copyright text center">
+    <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="https://www.velichamtech.com">Velicham Tech Inc</a>.
+    <!--<br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a>-->
+    </p>
+  </div>
+</footer>
